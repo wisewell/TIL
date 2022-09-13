@@ -30,3 +30,16 @@
   - 참고자료 [링크](https://zeddios.tistory.com/122)
 
 - 입력 모드 (`I`로 진입)
+
+#### 마크다운 문법
+- 외부 링크 추가
+```
+사용문법 : [Title](link)
+적용예 : [Google](https://google.com, "google link")
+```
+Link : [Google](https://google.com, "google link")
+
+#### 코드 인용법
+``` js
+const abc = 123;
+````
