@@ -103,9 +103,11 @@ git log
 
 `rm -rf .git` (Remove -Recursive -Force .git) : 저장소로 만든 것 취소 (.git 숨김폴더 삭제)
 
-#### Git Status
+#### 저장소 상태 파악하기
 
-`git status` : 깃 상태 확인
+```
+git status
+```
 
 #### Git 체크아웃
 
