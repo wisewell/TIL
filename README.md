@@ -110,4 +110,5 @@ git log
 #### Git 체크아웃
 
 `git checkout commitID` : 저장소 버전 되돌리기 (+ Git Graph 함께 활용하면 편하게 확인 가능)
+
 이후 `git checkout master`로 처음 상태로 돌아가기
