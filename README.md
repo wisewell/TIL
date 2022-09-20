@@ -85,3 +85,29 @@ git log
 ##### 리포지토리
 
 - 정의 : 여러 파일을 하나로 모은 컬렉션
+
+## 2022-09-20
+
+### RPA 1기, 웹프로그래밍 기획과 기본
+
+#### Repository 리포지토리
+
+- 정의 : 여러 파일을 하나로 모은 컬렉션
+- 일반 디렉터리와 리포지토리의 차이 : `.git` 디렉터리 유무
+
+#### Repository로 만들기
+
+`git init` (git Initialize) : 일반 폴더 → 저장소로 만들기 (.git 숨김폴더 생성됨)
+
+#### Repository 취소
+
+`rm -rf .git` (Remove -Recursive -Force .git) : 저장소로 만든 것 취소 (.git 숨김폴더 삭제)
+
+#### Git Status
+
+`git status` : 깃 상태 확인
+
+#### Git 체크아웃
+
+`git checkout commitID` : 저장소 버전 되돌리기 (+ Git Graph 함께 활용하면 편하게 확인 가능)
+이후 `git checkout master`로 처음 상태로 돌아가기
