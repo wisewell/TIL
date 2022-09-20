@@ -97,7 +97,7 @@ git log
 
 #### Repository로 만들기
 
-`git init` (git Initialize) : 일반 폴더 → 저장소로 만들기 (.git 숨김폴더 생성됨)
+`git init` (git initialize) : 일반 폴더 → 저장소로 만들기 (.git 숨김폴더 생성됨)
 
 #### Repository 취소
 
@@ -167,3 +167,13 @@ git switch BranchName
 ```
 
 : 작업 브랜치 변경
+
+#### Branch 병합
+
+먼저 최종적으로 병합할 브랜치로 전환한다.
+
+```
+git merge BranchName
+```
+
+선택한 브랜치를 가져와 합친다.
