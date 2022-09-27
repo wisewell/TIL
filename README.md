@@ -174,6 +174,8 @@ git switch BranchName
 git checkout -b BranchName
 ```
 
+: 브랜치 생성 후 바로 작업 브랜치로 지정 (checkout, switch)
+
 #### Branch 병합
 
 먼저 최종적으로 병합할 브랜치로 전환한다.
@@ -183,3 +185,72 @@ git merge BranchName
 ```
 
 선택한 브랜치를 가져와 합친다.
+
+## 2022-09-27
+
+### RPA 1기, 웹프로그래밍 기획과 기본
+
+#### Branch 병합시 충돌(conflict) 해결법
+
+1. `git status`
+2. vim, Visual Studio Code 등의 에디터로 충돌 부분 직접 수정
+3. 수정사항 저장
+4. `git add FileName`
+5. `git commit` (Merge 기본 메세지가 있으므로 따로 작성할 필요 없음)
+6. `git log`로 커밋 이력을 출력하여 병합이 제대로 이루어졌는지 확인
+
+#### Git Branch를 활용한 작업 순서도
+
+1. master/main 브랜치로 전환
+
+```
+git checkout main
+git switch main
+```
+
+2. 원격 저장소의 master/main 브랜치에서 내려받기 (동기화)
+
+```
+git pull origin main
+```
+
+3. 작업 브랜치 생성
+
+```
+git branch BranchName
+```
+
+4. 작업 브랜치 변경
+
+```
+git checkout BranchName
+git switch BranchName
+```
+
+5. 소스 코드 수정 후 저장
+
+6. 수정한 파일을 스테이징 영역에 올리기
+
+```
+git add FileName
+```
+
+7. commit 만들기
+
+```
+git commit -m "Commit Message"
+```
+
+8. 원격 저장소에 브랜치 생성하고 동기화
+
+```
+git push -u origin BranchName
+```
+
+9. Github 사이트에서 Pull Request 생성
+
+- New pull request
+- 병합 방향 설정
+- Create pull request
+- ...
+- 검토 후 Merge
