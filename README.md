@@ -168,6 +168,12 @@ git switch BranchName
 
 : 작업 브랜치 변경
 
+4. 브랜치 생성과 체크아웃 동시에 하기
+
+```
+git checkout -b BranchName
+```
+
 #### Branch 병합
 
 먼저 최종적으로 병합할 브랜치로 전환한다.
