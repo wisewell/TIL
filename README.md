@@ -247,7 +247,7 @@ git commit -m "Commit Message"
 git push -u origin BranchName
 ```
 
-9. Github 사이트에서 Pull Request 생성
+9. GitHub 사이트에서 Pull Request 생성
 
 - New pull request
 - 병합 방향 설정
