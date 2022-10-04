@@ -254,3 +254,81 @@ git push -u origin BranchName
 - Create pull request
 - ...
 - 검토 후 Merge
+
+## 2022-10-04
+
+### RPA 1기, 웹프로그래밍 기획과 기본
+
+#### GitHub 오픈소스 프로젝트 클론 코딩
+
+1. GitHub 오픈소스 프로젝트 로컬에 복제하기
+
+```
+git clone URL
+```
+
+2. 새로운 리포지토리 만들기
+
+3. 프로젝트를 복제한 로컬 저장소와 기존 원격 저장소의 연결 끊기
+
+`git remote` 로 origin 확인.
+있다면 기존 원격 저장소와의 연결을 끊어야 한다.
+
+```
+git remote remove origin
+```
+
+4. origin 삭제 확인
+
+```
+git remote
+git remote -v
+```
+
+5. 로컬 저장소와 나의 원격 저장소를 연결
+
+```
+git remote add origin URL
+```
+
+6. origin 추가 확인
+
+```
+git remote
+git remote -v
+```
+
+7. (필요시) master 브랜치명을 main으로 변경
+
+```
+git branch -M main
+```
+
+8. 프로젝트를 (로컬 저장소에서) 원격 저장소에 업로드
+
+```
+git push -u origin main
+```
+
+#### NPM 설치 및 확인
+
+1. Node.js 설치
+
+2. 터미널에서 설치 여부 및 버전 확인
+
+```
+node -v
+npm -v
+```
+
+3. npm 설치
+
+```
+npm install
+```
+
+4. 로컬 서버 실행
+
+```
+npm run serve
+```
