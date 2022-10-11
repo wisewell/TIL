@@ -380,9 +380,7 @@ git commit --amend
 #### git reset
 
 `git reset --hard HEAD^` : HEAD 바로 앞의 커밋 삭제(정확히는 HEAD 브랜치가 가리키는 커밋을 바꾼다.), 스테이징 영역에서 내리기, 변경내역 되돌리기
-
 `git reset --mixed HEAD^` : HEAD 바로 앞의 커밋 삭제(정확히는 HEAD 브랜치가 가리키는 커밋을 바꾼다.), 스테이징 영역에서 내리기 (기본 옵션으로 `git reset HEAD^`와 같다.)
-
 `git reset --soft HEAD^` : HEAD 바로 앞의 커밋 삭제(정확히는 HEAD 브랜치가 가리키는 커밋을 바꾼다.)
 
 #### git reset한 커밋 복구
