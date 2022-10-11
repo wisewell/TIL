@@ -442,3 +442,10 @@ git rebase main
 **일반 merge를 권장한다.**
 
 배포가 잦은 프로젝트는 일반 merge로 Pull Request를 병합한다.
+
+#### git rebase --interactive
+
+- 커밋의 순서를 변경할 수 있다. (pick)
+- 여러 개의 커밋 메세지를 한꺼번에 수정할 수 있다. (reword)
+- 커밋을 합칠 수 있다. (squash)
+- 중간 커밋을 삭제할 수 있다. (drop)
