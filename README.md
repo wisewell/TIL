@@ -332,3 +332,11 @@ npm install
 ```
 npm run serve
 ```
+
+## 2022-10-11
+
+### RPA 1기, 웹프로그래밍 기획과 기본
+
+#### 지금까지 배운 명령어 개념과 함께 복습
+- git commit, git branch, git checkout, git checkout -b, git merge, git pull, git push
+- 참고 사이트 : https://violet-bora-lee.github.io/git-tutorial/
