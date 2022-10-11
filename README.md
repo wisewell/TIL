@@ -406,3 +406,19 @@ git cherry-pick commitHash
 git cherry-pick commitHash1 commitHash2
 git cherry-pick commitHash1..commitHash3
 ```
+
+#### git revert
+
+1. (HEAD가 최신 커밋을 가리키고 있다는 가정하에) 최신 커밋 작업내역 취소하고 돌아가기
+
+```
+git revert HEAD
+```
+
+2. revert 커밋 생성
+
+3. git push 해서 원격 저장소에 적용
+
+```
+git push origin main
+```
