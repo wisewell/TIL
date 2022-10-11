@@ -2,8 +2,6 @@
 
 > 매일매일 배운 것을 기록합니다.
 
-강아지도 귀엽다!!!
-
 ## 2022-09-13
 
 ### RPA 1기, 웹프로그래밍 기획과 기본
@@ -378,3 +376,33 @@ git commit --amend
 ```
 
 커밋 메세지 수정 후 `Esc` - `:wq`
+
+#### git reset
+
+`git reset --hard HEAD^` : HEAD 바로 앞의 커밋 삭제(정확히는 HEAD 브랜치가 가리키는 커밋을 바꾼다.), 스테이징 영역에서 내리기, 변경내역 되돌리기
+`git reset --mixed HEAD^` : HEAD 바로 앞의 커밋 삭제(정확히는 HEAD 브랜치가 가리키는 커밋을 바꾼다.), 스테이징 영역에서 내리기 (기본 옵션으로 `git reset HEAD^`와 같다.)
+`git reset --soft HEAD^` : HEAD 바로 앞의 커밋 삭제(정확히는 HEAD 브랜치가 가리키는 커밋을 바꾼다.)
+
+#### git reset한 커밋 복구
+
+1. commit log 확인
+
+```
+git reflog
+```
+
+2. 복구할 내역 선택해 되돌아가기
+
+```
+git reset --hard commitHash
+```
+
+#### git cherry-pick
+
+다른 브랜치에 있는 커밋을 선택적으로 체크아웃한 브랜치에 적용
+
+```
+git cherry-pick commitHash
+git cherry-pick commitHash1 commitHash2
+git cherry-pick commitHash1..commitHash3
+```
