@@ -2,6 +2,8 @@
 
 > 매일매일 배운 것을 기록합니다.
 
+강아지도 귀엽다!!!
+
 ## 2022-09-13
 
 ### RPA 1기, 웹프로그래밍 기획과 기본
@@ -406,5 +408,3 @@ git cherry-pick commitHash
 git cherry-pick commitHash1 commitHash2
 git cherry-pick commitHash1..commitHash3
 ```
-
-revert 테스트
