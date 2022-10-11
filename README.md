@@ -332,3 +332,13 @@ npm install
 ```
 npm run serve
 ```
+
+## 2022-10-11
+
+### RPA 1기, 웹프로그래밍 기획과 기본
+
+#### Git의 인증 방법
+
+- ID/PW 방식
+- 키 방식 (공개키/개인키)
+- 토큰 방식 (personal access token)
