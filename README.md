@@ -342,3 +342,8 @@ npm run serve
 - ID/PW 방식
 - 키 방식 (공개키/개인키)
 - 토큰 방식 (personal access token)
+
+#### 지금까지 배운 명령어 개념과 함께 복습
+
+- git commit, git branch, git checkout, git checkout -b, git merge, git pull, git push
+- 참고 사이트 : https://violet-bora-lee.github.io/git-tutorial/
