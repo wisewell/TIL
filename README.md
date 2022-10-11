@@ -117,7 +117,7 @@ git status
 
 #### Commit 수정
 
-`git rebase -i HEAD~1` : 1개의 최신 커밋을 수정 (edit)
+`git rebase -i HEAD~1` : Interactive Rebase. 1개의 최신 커밋을 수정 (edit)
 
 #### 스테이징 영역에 올리기
 
@@ -422,3 +422,23 @@ git revert HEAD
 ```
 git push origin main
 ```
+
+#### git rebase
+
+1. 이동시킬 커밋들의 브랜치로 체크아웃한다.
+2. '베이스(기준)' 역할을 할 브랜치를 지정한다.
+
+```
+git rebase main
+```
+
+3. 커밋들이 main 브랜치의 끝으로 이동한다. (커밋 ID가 변한다. 동일한 내용을 담은 '새로운 커밋'이 생긴 것. 따라서 기존 커밋은 그대로 남아있다.)
+
+※ git merge와의 차이점
+
+1. merge commit이 생성되지 않는다.
+2. 커밋 그래프가 단순해진다.
+
+**일반 merge를 권장한다.**
+
+배포가 잦은 프로젝트는 일반 merge로 Pull Request를 병합한다.
