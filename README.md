@@ -368,3 +368,11 @@ git push --force origin main
 ```
 
 ※ git push → push가 정상 동작하는 경우에는 내부에서 fast-forward 방식으로 두 브랜치가 싱크가 맞춰진다.
+
+#### Commit Message 변경
+
+```
+git commit --amend
+```
+
+커밋 메세지 수정 후 `Esc` - `:wq`
