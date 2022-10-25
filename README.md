@@ -451,3 +451,37 @@ git rebase main
 - 여러 개의 커밋 메세지를 한꺼번에 수정할 수 있다. (reword)
 - 커밋을 합칠 수 있다. (squash)
 - 중간 커밋을 삭제할 수 있다. (drop)
+
+## 2022-10-25
+
+### RPA 1기, 웹프로그래밍 기획과 기본
+
+#### 저장소 Fork해서 작업하기
+
+1. 저장소 Fork하기
+2. Fork한 저장소 로컬에 내려받기 (`git clone Fork 저장소 주소`)
+3. 로컬에서 작업하기
+4. 자신의 Fork 저장소에 push하기
+5. 본래 저장소(Upstream)에 Pull Request 보내기 (Create pull request)
+
+#### 본저장소(Upstream)과 동기화하기
+
+1. `git remote add upstream URL`로 upstream이란 별명을 지어 원격 저장소와 연결
+
+2. Local-Upstream 동기화 방법 2가지
+
+```
+git pull upstream master
+```
+
+또는
+
+```
+git fetch upstream
+```
+
+```
+git merge upstream/master
+```
+
+upstream 저장소의 master 브랜치(upstream/master)에서 fetch해온 커밋을 현재 체크아웃한 로컬 저장소의 master에 병합
